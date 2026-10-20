@@ -1,87 +1,59 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Privacy Policy - IMuclim</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IMuclim privacy policy for the Android phone app, Wear OS companion, and optional watch face.">
+  <title>IMuclim Privacy Policy</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #263238;
-    }
-    h1, h2 { color: #162b40; }
+    :root { color-scheme: light; }
+    body { margin: 0; background: #faf9f6; color: #222; font: 1rem/1.7 system-ui, sans-serif; }
+    main { max-width: 48rem; margin: auto; padding: 2rem 1.25rem 4rem; }
+    h1, h2 { line-height: 1.25; color: #252145; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.3rem; margin-top: 2rem; }
+    a { color: #41358c; text-underline-offset: .15em; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+    li { margin-bottom: .75rem; }
+    code { overflow-wrap: anywhere; font-size: .9em; }
+    @media print { body { background: white; } main { max-width: none; padding: 0; } }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: October 21, 2026</p>
-
-  <p>
-    Yusuf Ramlawi operates IMuclim App.
-    This policy explains how we collect, use,
-    share, and protect information.
-  </p>
-
-  <h2>1. Information We Collect</h2>
-  <p>
-    [List all personal, device, location, usage,
-    and other information the app or its SDKs
-    actually collects or accesses.]
-  </p>
-
-  <h2>2. How We Use Information</h2>
-  <p>
-    [Explain the purpose of collecting each
-    category of data.]
-  </p>
-
-  <h2>3. Data Sharing</h2>
-  <p>
-    [Identify categories of recipients, such
-    as hosting providers, authentication
-    services, analytics, or advertisers.
-    Explain which data each receives and why.]
-  </p>
-
-  <h2>4. Data Security</h2>
-  <p>
-    [Describe actual security measures,
-    including encryption where applicable.]
-  </p>
-
-  <h2>5. Data Retention and Deletion</h2>
-  <p>
-    [Explain retention periods, deletion
-    procedures, and any legally required
-    retention exceptions.]
-  </p>
-
-  <h2>6. Children's Privacy</h2>
-  <p>
-    [Describe whether the app targets or
-    permits children and how their data
-    is handled.]
-  </p>
-
-  <h2>7. Changes to This Policy</h2>
-  <p>
-    We may update this policy. Changes will
-    be published on this page with an updated
-    effective date.
-  </p>
-
-  <h2>8. Contact Us</h2>
-  <p>
-    For privacy questions, contact:
-    <a href="mailto:yusuf_ramlawi@hotmail.com">
-      yusuf_ramlawi@hotmail.com
-    </a>
-  </p>
+<main>
+<h1>IMuclim Privacy Policy</h1>
+<p>Effective date: October 21, 2026</p>
+<p>This policy explains how IMuclim handles information in its Android phone app and Wear OS companion (<code>com.imuclim.mobile</code>), and its optional watch face (<code>com.imuclim.watchface</code>).</p>
+<h2>Information used by the app</h2>
+<ul>
+<li><strong>Location:</strong> With your permission, the phone app reads your device&#x27;s location, including precise latitude and longitude, to calculate prayer times. You can search for a city or address instead. The app saves your selected coordinates and place label, which can include a street or address. It refreshes device location when you open or return to the app if you have selected device location. It does not continuously track your location in the background.</li>
+<li><strong>Prayer settings:</strong> The app saves your language, calculation method, Asr method, prayer-time adjustments, and alert preferences.</li>
+<li><strong>Prayer records:</strong> The app saves completed, missed, and pending prayer states, with dates and update or completion timestamps. Some missed states are calculated when a prayer window expires. These records can reveal information about your religious practice.</li>
+<li><strong>Schedules and sync information:</strong> The app uses calculated prayer times, your time zone, and synchronization timestamps to update reminders, widgets, and your paired watch.</li>
+</ul>
+<p>IMuclim calculates prayer times on your device. You do not need an IMuclim account. The developer does not operate a server that receives your location or prayer records, sell your personal information, or use advertising or behavioral analytics in the app.</p>
+<h2>Location services and other providers</h2>
+<p>The phone app uses Android&#x27;s location and geocoding services. When you search for a place or request a place name for coordinates, your device may send the search text or coordinates to its location or geocoding provider. That provider may be Google or a service supplied by your device manufacturer. The provider handles those requests under its own privacy policy and your device settings.</p>
+<p>Google Play, Android, and Wear OS may handle service, diagnostic, or account information under their own settings and policies. See <a href="https://policies.google.com/privacy">Google&#x27;s Privacy Policy</a> for Google services. IMuclim does not receive your Google account credentials.</p>
+<h2>Phone and watch synchronization</h2>
+<p>When you use IMuclim on a paired Wear OS watch, the phone sends your selected location, prayer settings, schedules, prayer states, and related timestamps to the companion app. The watch sends prayer-completion updates back to the phone. Synchronization can run in the background using the location already saved on the phone.</p>
+<p>IMuclim uses Google Play services&#x27; Wear OS Data Layer for this exchange. Depending on connectivity, Google transfers the data over Bluetooth or through its servers. Google documents encrypted Bluetooth transport and end-to-end encryption for Data Layer transfers through its cloud. Each device keeps its own local copy of the app data.</p>
+<p>The optional watch face displays information supplied through Wear OS complications, such as prayer names, times, and countdowns. If you choose IMuclim complications on another watch face, Wear OS supplies that display information to the face you selected.</p>
+<h2>Permissions and visible information</h2>
+<p>You can manage location and notification permissions in Android settings. Denying location access prevents device-location updates; you can use a manually selected place. Revoking permission does not erase a location that you previously saved.</p>
+<p>Notifications, sounds, vibration, and watch alarm permissions support prayer reminders. The watch may use exact alarms, a full-screen alert, and restart reminders after a device reboot. IMuclim uses these features for prayer alerts.</p>
+<p>Widgets, notifications, and watch complications can show prayer information to anyone who can see your screen. You can disable alerts, change lock-screen notification visibility, or remove widgets and complications through the app and device settings.</p>
+<h2>Storage, retention, and deletion</h2>
+<p>IMuclim keeps settings, prayer states, cached schedules, and reminder information in app storage on your phone and watch. The phone replaces its current-day prayer states when the prayer day changes. The watch can retain previously synchronized prayer records until you clear its app storage. IMuclim does not provide a cloud account or an online archive of your prayer history.</p>
+<p>To remove the app&#x27;s local data, open your device&#x27;s <strong>Settings &gt; Apps &gt; IMuclim &gt; Storage</strong> and choose <strong>Clear storage</strong> or <strong>Clear data</strong>, or uninstall the app without choosing to keep its data. Menu names vary by device. Repeat this on both the phone and watch. Clearing one device does not delete the other device&#x27;s copy. Stop using or uninstall both apps if you want to prevent further synchronization from restoring data from another device.</p>
+<p>Android may back up or transfer phone app data depending on your device and account settings. The Wear OS companion disables Android app backups. Restoring a phone backup may restore saved information. Manage system backups through your device or account settings. Platform-managed backups and synchronization caches follow the relevant provider&#x27;s retention and deletion rules.</p>
+<h2>Security</h2>
+<p>IMuclim uses Android&#x27;s app storage protections and Google Play services&#x27; protected Data Layer transport. It does not add a separate password or app-level encryption layer to local settings and prayer records. Protect access to your phone, watch, and backups with your device&#x27;s security settings.</p>
+<h2>Privacy questions</h2>
+<p>Contact the IMuclim developer at <a href="mailto:yusuf_ramlawi@hotmail.com">yusuf_ramlawi@hotmail.com</a> with privacy questions or requests. The developer cannot remotely access or erase data stored only on your devices; use the steps above to remove it.</p>
+<p>If you contact the developer, the developer uses the email address and information you provide to respond to your inquiry. Include only the information needed for your request. The developer retains that correspondence for handling the request and any applicable legal obligations. You can request deletion of your correspondence through the same contact address.</p>
+<h2>Changes to this policy</h2>
+<p>The developer will update this page when the app&#x27;s privacy practices change and revise the effective date above. If a change requires additional permission or consent, the app will request it before using information for that purpose.</p>
+</main>
 </body>
 </html>
